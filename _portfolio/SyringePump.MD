@@ -1,13 +1,14 @@
 ---
-title: "Large Format 3D Printer"
-excerpt: "A 1 kg/hr pellet extruder and 1 cubic meter build envelope for printing furniture."
+title: "Automated Syringe Pump Project"
+excerpt: "A syringe pump that automatically pushes liquid at a user-specified flow rate."
 header:
-  image: /assets/img/LF3DP-Banner-2.jpg
-  teaser: /assets/img/Large-Format-3D-Printer-Thumbnail.png
+  image: /assets/img/image8.png
+  teaser: /assets/img/image11.png
 gallery:
-  - image_path: assets/img/Slide-3.png
-  - image_path: assets/img/Slide-2.png
-  - image_path: assets/img/Slide-4.png
+  - image_path: assets/img/image10.png
+  - image_path: assets/img/image11.png
+  - image_path: assets/img/image8.png
+  - image_path: assets/img/image9.png
    
 ---
 
@@ -20,5 +21,5 @@ gallery:
 # CAD Model
 <iframe src="https://myhub.autodesk360.com/ue2df0af5/shares/public/SH35dfcQT936092f0e437224cd558fdcdc2f?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
-{% include gallery caption="Large Format 3D Printer Gallery" %}
+{% include gallery caption="Automated Syringe Pump" %}
 
