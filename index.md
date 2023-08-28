@@ -4,23 +4,17 @@ layout: splash
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/img/Home-Banner-Image.jpeg
+  overlay_image: /assets/img/background_website.jpg
   actions:
     - label: "My Projects"
       url: "/portfolio/"
-excerpt: "Dr. David Florian is an engineer with a passion for teaching and the open-source community. His area of expertise is 3D printing, with an emphasis on large format pellet extrusion and selective laser sintering."
+excerpt: "Kevin Masih is a 4th year mechanical engineering student with a minor in computer science and digital fabrication. Kevin is currently open to full-time positions after graduation. This page is dedicated to demonstrating the skills learned during his undergraduate experience."
 feature_row:
   - image_path: assets/img/CNC-Mill-Thumbnail.jpg
-    alt: "CNC Mill"
-    title: "Custom CNC Milling Machine"
-    excerpt: "Built for fabricating aluminum and steel parts."
-  - image_path: assets/img/Plasma-Cutter-Banner.jpg
-    alt: "placeholder image 2"
-    title: "DIY Plasma Cutter"
-    excerpt: "A hot plasma stream slices through sheet metal."
-  - image_path: assets/img/Zidex-Thumbnail.jpg
-    title: "Bespoke IDEX 3D Printer"
-    excerpt: "Multimaterial printing. "
+    alt: "Automated Syringe Pump"
+    title: "Medical Syringe Pump Project"
+    excerpt: "Built to improve medical infastructure."
+
 ---
 
 {% include feature_row %}
