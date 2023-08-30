@@ -10,7 +10,7 @@ header:
       url: "/portfolio/"
 excerpt: "Kevin Masih is a 4th year mechanical engineering student with a minor in computer science and digital fabrication. Kevin is currently open to full-time positions after graduation. This page is dedicated to demonstrating the skills learned during his undergraduate experience."
 feature_row:
-  - image_path: assets/img/CNC-Mill-Thumbnail.jpg
+  - image_path: assets/img/image11.png
     alt: "Automated Syringe Pump"
     title: "Medical Syringe Pump Project"
     excerpt: "Built to improve medical infastructure."
