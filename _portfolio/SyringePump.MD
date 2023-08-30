@@ -5,7 +5,6 @@ header:
   image: /assets/img/image12.jpg
   teaser: /assets/img/image11.png
 gallery:
-  - image_path: assets/img/image10.jpg
   - image_path: assets/img/image11.png
   - image_path: assets/img/image8.png
   - image_path: assets/img/image9.jpg
