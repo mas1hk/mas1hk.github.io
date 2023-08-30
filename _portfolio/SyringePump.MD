@@ -14,12 +14,12 @@ gallery:
 
 # Features
 
-* **Massive Print Area: 1140 x 1200 x 1100 mm.** With a build envelop just shy of 4 feet in all dimensions, the LF3DP is capable of printing furniture and other large objects.
-* **High Volumetric Output Extruder: 1 kg/hr - 450 C.** This printer come standard with a MDPH2 extruder by Massive Dimension, which can extrude at a rate of 1 kg/hr. Unlike typical filament extruders, the MDPH2 uses a screw to convey and liquify plastic pellets before the molten material is pushed out of a large nozzle (1 to 5 mm extrusion diameter). Please note: This printer can also be configured for other high flow rate extruders, such as the Typhoon and Pulsar by Dyze Design.
-* **Affordable Pellet Feedstock** Pellets are the cheapest form of feedstock for any plastic-based manufacturing process. Save 50-75% of material costs by using pellets instead of spools of filament. Concentrated colorant can be added to the virgin material to achieve any color in the rainbow without requiring large amounts of storage. Recyled material can also be used for sustainable material printing.
+* **20 mL and and 5 mL syringe holder** The device is able to hold two types of syringes- either a 20 mL syringe or 5 mL syringe.
+* **3D printed enclosure** The device has a 3D printed enclosure to protect against water damage and exposure to electrical equipment. All the electronics are housed in this enclosure and can be accessed by unscrewing two bolts. 
+* **Automated flow rate** The flow rate of the device can be changed by changing the variable "flowrate". A single button is then used to control the device and the state of the device is indicated by an LED. When the device is running the LED is green, and the button can be pressed again to pause the device which is indicated by the LED turning amber. Finally, if all liquid is expelled a switch is hit stopping the motor from driving further and turning the LED red. 
 
 # CAD Model
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH35dfcQT936092f0e4320bbce97815dc8f2?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
-{% include gallery caption="Automated Syringe Pump" %}
+{% include gallery caption="Automated Syringe Pump Gallery" %}
 
