@@ -6,7 +6,7 @@ title: "About Kevin Masih"
 
 ## Education
 
-David prides himself on his diverse skill set. His most prominent fields of expertise are additive manufacturing (i.e., 3D printing) and biotechnology. 
+Kevin prides himself on his diverse skill set. His most prominent fields of expertise are 3D modelling and design, additive manufacturing (i.e., 3D printing) and software design (C++). 
 
 
 * Vanderbilt University
