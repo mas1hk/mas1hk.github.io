@@ -2,7 +2,7 @@
 title: "Automated Syringe Pump Project"
 excerpt: "A syringe pump that automatically pushes liquid at a user-specified flow rate."
 header:
-  image: /assets/img/image8.png
+  image: /assets/img/image10.png
   teaser: /assets/img/image11.png
 gallery:
   - image_path: assets/img/image10.png
