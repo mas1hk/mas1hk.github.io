@@ -13,7 +13,7 @@ feature_row:
   - image_path: assets/img/image11.png
     alt: "Automated Syringe Pump"
     title: "Medical Syringe Pump Project"
-    excerpt: "Built to improve medical infastructure."
+    excerpt: "Built to improve medical infrastructure."
 
 ---
 
