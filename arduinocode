@@ -1,0 +1,57 @@
+#include <AccelStepper.h>
+AccelStepper stepperX(AccelStepper::DRIVER, 3, 4);
+const int button = 2;
+const int end_switch = 6;
+const int red= 9;
+const int green=10;
+const int blue=11;
+// variable to read button state
+int button_state = LOW;
+// variable to read switch state
+int switch_state = 0;
+//SET FLOWRATE BELOW!!!!!
+float flowrate = 5 ; // sets flow rate (ml/min). Max flow rate is 1734ml/min for 
+//flowrate calculations
+float flowrate_perstep = 0.02*PI*(21.45/2)*(21.45/2);
+float step_speed =(1000*flowrate/60) / flowrate_perstep ;
+void setup() {
+  // put your setup code here, to run once:
+  // Setting pins modes - button inputs, LEDs are outputs
+  pinMode(button, INPUT_PULLUP);
+  pinMode(end_switch, INPUT_PULLUP);
+  pinMode(red,OUTPUT);
+  pinMode(green, OUTPUT);
+  pinMode(blue, OUTPUT);
+  // ask user which syringe they will be using
+stepperX.setMaxSpeed(4000);
+stepperX.setSpeed(step_speed);
+}
+void loop() {
+  button_state = digitalRead(button);
+  switch_state = digitalRead(end_switch);
+  if (button_state == HIGH & switch_state == LOW) {
+    digitalWrite(green, HIGH);
+    digitalWrite(red, LOW);
+    digitalWrite(blue, LOW);
+    stepperX.runSpeed();
+  } else if (button_state == LOW & switch_state == LOW){      
+    digitalWrite(green, HIGH);
+    digitalWrite(red, HIGH);
+    digitalWrite(blue, LOW);
+  } else {
+    digitalWrite(green, LOW);
+    digitalWrite(red, HIGH);
+    digitalWrite(blue, LOW);
+    if (button_state == HIGH) {
+      while (button_state == HIGH) {
+        delay(1000);
+        button_state = digitalRead(button);
+      }
+    } else if (button_state == LOW) {
+      button_state = HIGH;
+      while (button_state == HIGH) {
+        delay(1000);
+        button_state = digitalRead(button);
+      }
+    }
+}
