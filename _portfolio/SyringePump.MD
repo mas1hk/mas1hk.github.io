@@ -21,5 +21,18 @@ gallery:
 # CAD Model
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH35dfcQT936092f0e4320bbce97815dc8f2?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
+# Part List
+| Off-the-shelf    | 3D Printed              |
+| ---------------- | ----------------------- |
+| LED              | Enclosure Base          |
+| Switch           | Enclosure Top           |
+| Adruino board    | Syringe Barrel support  |
+| DC motor         | Syringe plunger support |
+| 8mm lead screw   | Motor Mount             |
+| Flexible Coupler |                         |
+| Linear Bearing   |                         |
+| 3mm Screws       |                         |
+| 5mm Screws       |                         |
+
 {% include gallery caption="Automated Syringe Pump Gallery" %}
 
