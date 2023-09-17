@@ -14,6 +14,11 @@ feature_row:
     alt: "Automated Syringe Pump"
     title: "Medical Syringe Pump Project"
     excerpt: "Built to improve medical infrastructure."
+    
+  - image_path: assets/img/cover photo.jpg
+    alt: "Bike Phone Mount"
+    title: "Bike Phone Mout"
+    excerpt: "Quick and easy protoype."
 
 ---
 
