@@ -2,12 +2,12 @@
 title: "Bike Phone Mount"
 excerpt: "A 3D printed and almost free way to mount my phone to my bike."
 header:
-  image: /assets/img/image12.jpg
-  teaser: /assets/img/image11.png
+  image: /assets/img/cover photo.jpg
+  teaser: /assets/img/cover photo.jpg
 gallery:
-  - image_path: assets/img/image11.png
-  - image_path: assets/img/image8.png
-  - image_path: assets/img/image9.jpg
+  - image_path: assets/img/bikephoto2.jpg
+  - image_path: assets/img/bikecloseview.jpg
+  - image_path: assets/img/bikeMountClose.jpg
    
 ---
 # Background
