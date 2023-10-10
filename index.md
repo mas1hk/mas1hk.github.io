@@ -19,6 +19,11 @@ feature_row:
     alt: "Bike Phone Mount"
     title: "Bike Phone Mout"
     excerpt: "Quick and easy protoype."
+    
+  - image_path: assets/img/cover photo.jpg
+    alt: "Flexible Pliers"
+    title: "Flexible Pliers"
+    excerpt: "Multi-Material 3D printing."
 
 ---
 
