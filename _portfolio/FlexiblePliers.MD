@@ -14,9 +14,9 @@ gallery:
 
 *  The goal of this project was to explore multi-material 3D printing to improve the functionality of 3D printed prototypes. To do this I created a pair of flexible pliers where the spring component that allows a plier to close was created from a flexible plastic embedded within the pliers. The function of these pliers is to make it easier to hold a resistor when placing components or soldering in places where a soldering mount can't be placed.  
 
-Dual extrusion multi-material printing is the most trivial method to achieve this, however, it has its drawbacks due to material or extruder swapping. Dual extrusion increases print times, increases the likelihood of a jam occurring and increases the amount of waste material. Furthermore, there is a large restriction on the materials that can be dual extruded as they must have similar chemical composition (specifically in terms of their intermolecular forces) and similar shrinking/cooling rates. For example, PLA and ABS can't be printed via dual extrusion.  
+*  Dual extrusion multi-material printing is the most trivial method to achieve this, however, it has its drawbacks due to material or extruder swapping. Dual extrusion increases print times, increases the likelihood of a jam occurring and increases the amount of waste material. Furthermore, there is a large restriction on the materials that can be dual extruded as they must have similar chemical composition (specifically in terms of their intermolecular forces) and similar shrinking/cooling rates. For example, PLA and ABS can't be printed via dual extrusion.  
 
-Due to these drawbacks, I decided it was better to create the multi-material flexible pliers by editing the G-code of my print to allow me to stop the print halfway through and embed the flexible component made of TPU. Pictures of the paused print and placement on the embedded TPU piece are shown below. The body of the pliers (handle and pincers) was made of PLA as it is cheap and strong enough to hold a resistor.  
+*  Due to these drawbacks, I decided it was better to create the multi-material flexible pliers by editing the G-code of my print to allow me to stop the print halfway through and embed the flexible component made of TPU. Pictures of the paused print and placement on the embedded TPU piece are shown below. The body of the pliers (handle and pincers) was made of PLA as it is cheap and strong enough to hold a resistor.  
 
 
 # CAD Model
@@ -31,5 +31,5 @@ Due to these drawbacks, I decided it was better to create the multi-material fle
 
 
 
-{% include gallery caption="Automated Syringe Pump Gallery" %}
+{% include gallery caption="Flexible Pliers Gallery" %}
 
