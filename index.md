@@ -20,7 +20,7 @@ feature_row:
     title: "Bike Phone Mout"
     excerpt: "Quick and easy protoype."
     
-  - image_path: assets/img/cover photo.jpg
+  - image_path: /assets/img/Plier.jpeg
     alt: "Flexible Pliers"
     title: "Flexible Pliers"
     excerpt: "Multi-Material 3D printing."
