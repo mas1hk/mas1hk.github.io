@@ -28,6 +28,8 @@ gallery:
 * **Plier Body** The plier body was composed of 4 separate parts: 2 pincers and 2 legs. The legs have an ergonomic design for comfortable gripping and the pincers have a separation of 10mm to allow enough clearance to grab a resistor.
 * **Improvements** The plier performed well when a load was applied to the legs to close them. The plier was able to hold weights of around 250g when the weight was held parallel to the pliers. However, although the clearance of 10mm is enough to pick up a resistor it is a little small to comfortably grab without worrying about accuracy.  Furthermore, if a load is applied perpendicularly to the face of the pliers, the flexible centre folds in on it's self causing the pincers to shear. This lack of rigidness and pincer opening could be improved in a further iteration. 
 
+![Plier Pincing](/assets/img/plier gif.gif)
+
 
 
 
