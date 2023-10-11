@@ -2,12 +2,12 @@
 title: "Flexible Pliers"
 excerpt: "A project to test multi-material printing and adding custom G-code commands."
 header:
-  image: /assets/img/cover img4090.jpeg
-  teaser: /assets/img/cover img4090.jpg
+  image: /assets/img/img4090.jpeg
+  teaser: /assets/img/img4090.jpeg
 gallery:
   - image_path: assets/img/img4090.jpg
   - image_path: assets/img/img4088.jpeg
-  - image_path: assets/img/img4089.jpg
+  - image_path: assets/img/img4089.jpeg
    
 ---
 # Background
