@@ -12,21 +12,43 @@ gallery:
 ---
 # Background
 
-*  The goal of this project was to explore multi-material 3D printing to improve the functionality of 3D printed prototypes. To do this I created a pair of flexible pliers where the spring component that allows a plier to close was created from a flexible plastic embedded within the pliers. The function of these pliers is to make it easier to hold a resistor when placing components or soldering in places where a soldering mount can't be placed.  
-
-*  Dual extrusion multi-material printing is the most trivial method to achieve this, however, it has its drawbacks due to material or extruder swapping. Dual extrusion increases print times, increases the likelihood of a jam occurring and increases the amount of waste material. Furthermore, there is a large restriction on the materials that can be dual extruded as they must have similar chemical composition (specifically in terms of their intermolecular forces) and similar shrinking/cooling rates. For example, PLA and ABS can't be printed via dual extrusion.  
-
-*  Due to these drawbacks, I decided it was better to create the multi-material flexible pliers by editing the G-code of my print to allow me to stop the print halfway through and embed the flexible component made of TPU. Pictures of the paused print and placement on the embedded TPU piece are shown below. The body of the pliers (handle and pincers) was made of PLA as it is cheap and strong enough to hold a resistor.  
+*  Microfluidic devices are devices that use and manipulate extremely small amounts of fluids on the 10^-9 -10^-18m for various purposes. Manipulations on fluids at this scale have applications in detecting chemical compounds, cell culture devices, and at-home testing such as pregnancy tests. 
+* The goal of this project is to create a microfluidic mixing device using digital fabrication techniques to reduce the cost and difficulty of manufacturing. 
+*  I am particularly interested in the applications of microfluidic devices for testing as such devices can reduce the quantity of reagents needed for testing thus improving the efficiency of tests by minimising waste. Furthermore, smaller tests enable multiple reactions or tests to be run simultaneously from one sample and increase accessibility by enabling point-of-care use. 
+*  When considering microfluidic testing devices an important base criterion for many of these devices is the mixing of reagents. Two important examples of this are biological assays that measure the quantity or presence of a target element and chemical reactions/synthesis. In both cases, mixing is required to ensure homogenous testing and reactions occur.
 
 
 # CAD Model
-<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH512d4QTec90decfa6e1fe92f7086d7a4e4?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH512d4QTec90decfa6eea03d13de859ed90?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+
+# Importance of Digital Fabrication
+
+* **3D printing microfluidic molds** Current 3D printing technologies like SLA printing have extremely small resolutions that can be used to provide a cost-effective way to fabricate microdevices with complex geometries. Commonly the fabrication of microfluidic devices requires specialised training and access to a clean room. Hence, the use of 3D printing technologies can improve the manufacturing process by reducing the overhead cost of equipment and training required for the fabrication process. 
+
+* **How SLA Printers work** SLA printers offer some of the highest resolution out of current on-the-market 3D printers. The FormLabs SLA printer has a laser spot size of 85μm and a minimum XY resolution of 25μm. This is achieved through the use of vat photo polymerisation to polymerise resin into polymers through exposure to UV light. Due to the use of a UV laser parabolic mirror and galvanometer small spot sizes can be achieved for point-wise scanning. This type of scanning is called vector scanning as objects are converted into point-wise objects and each layer of the object is created by the laser point by point. 
 
 # Design Features
 
-* **Flexible TPU joint** TPU was used to create the flexible piece that allows the pincers to close. The TPU joint was created in a diagonal, cross-hatched shape to maximise tension. TPU has a higher elasticity under tension than compression hence a diagonal shape was chosen. This way when the handles are squeezed the handles stretch the TPU causing the pincers to close. Two iterations of this joint were made. The first iteration contained a 3x3 1mm thick meshed grid that was slightly too thick. Hence it required a large amount of force to deform. The second iteration consisted of a 1.5mm thick 2x2 meshed grid providing the right deformation amount. The TPU joint remains in place between the plier body due to dovetail joints within the model as shown in the gallery photo. 
-* **Plier Body** The plier body was composed of 4 separate parts: 2 pincers and 2 legs. The legs have an ergonomic design for comfortable gripping and the pincers have a separation of 10mm to allow enough clearance to grab a resistor. This thoughtfully engineered plier body seamlessly combines comfort and functionality, making it a valuable tool for tasks that demand both dexterity and control, ultimately simplifying intricate handling and manipulation of objects.
-* **Improvements** The plier performed well when a load was applied to the legs to close them. The plier was able to hold weights of around 250g when the weight was held parallel to the pliers. However, although the clearance of 10mm is enough to pick up a resistor it is a little small to comfortably grab without worrying about accuracy.  Furthermore, if a load is applied perpendicularly to the face of the pliers, the flexible centre folds in on itself causing the pincers to shear. This lack of rigidness and pincer opening could be improved in a further iteration. 
+* **Mixing channel** A literature survey reviewing microfluidic mixing methods and geometries was used to inform the design used and is linked in the appendix. It was found that out of all passive mixing methods zig-zag channels had one of the highest mixing indexes at 0.96. Based on this knowledge a zig-zag mixing geometry was created with small horizontal channels in between to encourage flow.  
+* **3D mixing feature** Utilizing the SLA printer allowed for easy fabrication of 3D features to further enhance mixing. A twisting channel was created on the final straight away for the fluid to encourage some final mixing based on geometries also found in the literature survey. 
+
+# Fabrication technique
+
+* ** 3D printed master mold** A literature survey reviewing microfluidic mixing methods and geometries was used to inform the design used and is linked in the appendix. It was found that out of all passive mixing methods zig-zag channels had one of the highest mixing indexes at 0.96. Based on this knowledge a zig-zag mixing geometry was created with small horizontal channels in between to encourage flow.  
+* ** Paralene Deposition and PDMS** Utilizing the SLA printer allowed for easy fabrication of 3D features to further enhance mixing. A twisting channel was created on the final straight away for the fluid to encourage some final mixing based on geometries also found in the literature survey. 
+* ** Bonding to Glass Plate** Utilsing the SLA printer allowed for easy fabrication of 3D features to further enhance mixing. A twisting channel was created on the final straight away for the fluid to encourage some final mixing based on geometries also found in the literature survey. 
+
+# Improvements
+
+* **SLA Fabrication isn’t perfect** SLA printing uses resins that contain photoinitiators that form free radicals which are very chemically reactive. As such there have been issues with creating mixing devices from the 3D mold due to PDMS not curing and adhesion to the 3D printed master mold. Two solutions were attempted in this project. 
+* **Curing 3D printed parts** The first solution attempted was based on the literature linked below. The theory is that after curing at 120°C for one hour the uncured monomers containing photoinitiators should have cured. Thus rendering the resin-printed master mold unreactive with the PDMS allowing it to cure. Unfortunately, this technique resulted in large warping due to cross-linking and the PDMS still did not cure.
+* **Curing 3D printed parts** The second approach was from a different research paper where a thin (nm) layer of paralene is used to coat the mold rendering it unreactive and biocompatible. This technique produced a PDMS microfluidic device from the master mold. 
+
+
+# Appendix 
+*Relevant papers: • 
+*Microfluidic Mixing: A Review. Int J Mol Sci.12(5): 3263–3287.
+*Rapid prototyping of cell culture microdevices using parylene-coated 3D prints Lab Chip, 2021, 21, 4814-4822
 
 ![Plier Pincing](/assets/img/plier gif.gif)
 
