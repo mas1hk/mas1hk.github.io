@@ -2,12 +2,12 @@
 title: "Microfluidic Device"
 excerpt: "A project testing the capabilities of SLA printers in the fabrication of microfluidic devices."
 header:
-  image: /assets/img/Plier.jpeg
-  teaser: /assets/img/Plier.jpeg
+  image: /assets/img/Testing Image.jpeg
+  teaser: /assets/img/Device.jpeg
 gallery:
-  - image_path: /assets/img/IMG_4090.jpeg
-  - image_path: /assets/img/IMG_4089.jpeg
-  - image_path: /assets/img/IMG_4088.jpeg
+  - image_path: /assets/img/Baked Bad Mould.jpeg
+  - image_path: /assets/img/Clear Mould.jpeg
+  - image_path: /assets/img/Device.jpeg
    
 ---
 # Background
@@ -17,15 +17,14 @@ gallery:
 *  I am particularly interested in the applications of microfluidic devices for testing as such devices can reduce the quantity of reagents needed for testing thus improving the efficiency of tests by minimising waste. Furthermore, smaller tests enable multiple reactions or tests to be run simultaneously from one sample and increase accessibility by enabling point-of-care use. 
 *  When considering microfluidic testing devices an important base criterion for many of these devices is the mixing of reagents. Two important examples of this are biological assays that measure the quantity or presence of a target element and chemical reactions/synthesis. In both cases, mixing is required to ensure homogenous testing and reactions occur.
 
+# Importance of Digital Fabrication
+
+* **3D printing microfluidic moulds** Current 3D printing technologies like SLA printing have extremely small resolutions that can be used to provide a cost-effective way to fabricate microdevices with complex geometries. Commonly the fabrication of microfluidic devices requires specialised training and access to a clean room. Hence, the use of 3D printing technologies can improve the manufacturing process by reducing the overhead cost of equipment and training required for the fabrication process. 
+
+* **How SLA Printers work** SLA printers offer some of the highest resolution out of current on-the-market 3D printers. The FormLabs SLA printer has a laser spot size of 85μm and a minimum XY resolution of 25μm. This is achieved through the use of vat photo polymerisation to polymerise resin into polymers through exposure to UV light. Due to the use of a UV laser parabolic mirror and galvanometer small spot sizes can be achieved for point-wise scanning. This type of scanning is called vector scanning as objects are converted into point-wise objects and each layer of the object is created by the laser point by point. 
 
 # CAD Model
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH512d4QTec90decfa6eea03d13de859ed90?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-
-# Importance of Digital Fabrication
-
-* **3D printing microfluidic molds** Current 3D printing technologies like SLA printing have extremely small resolutions that can be used to provide a cost-effective way to fabricate microdevices with complex geometries. Commonly the fabrication of microfluidic devices requires specialised training and access to a clean room. Hence, the use of 3D printing technologies can improve the manufacturing process by reducing the overhead cost of equipment and training required for the fabrication process. 
-
-* **How SLA Printers work** SLA printers offer some of the highest resolution out of current on-the-market 3D printers. The FormLabs SLA printer has a laser spot size of 85μm and a minimum XY resolution of 25μm. This is achieved through the use of vat photo polymerisation to polymerise resin into polymers through exposure to UV light. Due to the use of a UV laser parabolic mirror and galvanometer small spot sizes can be achieved for point-wise scanning. This type of scanning is called vector scanning as objects are converted into point-wise objects and each layer of the object is created by the laser point by point. 
 
 # Design Features
 
@@ -34,45 +33,62 @@ gallery:
 
 # Fabrication technique
 
-* ** 3D printed master mould** Using the SLA printer a master mold of the microfluidic channels can be printed. The print is made of clear resin and is then cured for 25 minutes at 100°C. In the mold negative spaces are extruded such that the extruded spaces are empty when a PDMS mold is created from the 3D print. 
+1) **3D printed master mould** 
+  Using the SLA printer a master mold of the microfluidic channels can be printed. The print is made of clear resin and is then cured for 25 minutes at 100°C. In the mold negative spaces are extruded such that the extruded spaces are empty when a PDMS mold is created from the 3D print. 
 
-Insert image of 3D print 
+</figure>
+<img src="Clear Mould.jpg" alt="drawing" width="400" height ="400"/> 
+<figcaption>Clear 3D printed mould.</figcaption>
+</figure>
   
-* ** Paralene Deposition and PDMS** The master mold can then be used to create microfluidic devices with the exact geometries required. Originally, the PDMS was added in a 10:1 ratio with a curing agent directly into the master mold. However, it was found that the PDMS did not cure this way. Instead, Parleyene was deposited onto the surface of the master mould using the Labcoter PDS 2010 parylene deposition machine. An explanation of these issues is provided in the improvements section. After this PDMS could be added in 10:1 ratio with a curing solution to produce plastic microfluidic devices that are compatible with cell cultures. 
+2) **Paralene Deposition and PDMS** 
+  The master mould can then be used to create microfluidic devices with the exact geometries required. Originally, the PDMS was added in a 10:1 ratio with a curing agent directly into the master mould. However, it was found that the PDMS did not cure this way. Instead, Parleyene was deposited onto the surface of the master mould using the Labcoter PDS 2010 parylene deposition machine. An explanation of these issues is provided in the improvements section. After this PDMS could be added in 10:1 ratio with a curing solution to produce plastic microfluidic devices that are compatible with cell cultures. 
 
-Insert image 
+</figure>
+<img src="Baked Bad Mould.jpg" alt="drawing" width="400" height ="400"/>  
+<figcaption>Over sintered mould.</figcaption>
+</figure>
 
-* ** Bonding to Glass Plate** Finally, the bottom layer on the PDMS plastic is bonded to a glass plate to close the channels. This was done using the PlasmaFlo PDC-FMG plasma cleaner. 
+3) **Bonding to Glass Plate** 
+  Finally, the bottom layer of the PDMS plastic is bonded to a glass plate to close the channels. This was done using the PlasmaFlo PDC-FMG plasma cleaner. 
+
+</figure>
+<img src="Device.jpg" alt="drawing" width="400" height ="400"/>  
+<figcaption>Final PDMS device bonded to glass plate.</figcaption>
+</figure> 
 
 #Testing
-* ** Good News or Bad News** It was found that the microfluidic device initially mixed a solution of blue and pink solution producing a purple solution. However, the small channel lengths meant the pressure within the channels was large resulting in the glass and PDMS splitting. 
+* ** Good News or Bad News** 
+  It was found that the microfluidic device initially mixed a solution of blue and pink solution producing a purple solution. However, the small channel lengths meant the pressure within the channels was large resulting in the glass and PDMS splitting. 
  
-Insert video 
+ ![Test video](/assets/img/Test vid to gif.gif)
 
 
 # Improvements
 
-* **SLA Fabrication isn’t perfect** SLA printing uses resins that contain photoinitiators that form free radicals which are very chemically reactive. As such there have been issues with creating mixing devices from the 3D mold due to PDMS not curing and adhesion to the 3D printed master mold. Two solutions were attempted in this project. 
-* **Curing 3D printed parts** The first solution attempted was based on the literature linked below. The theory is that after curing at 120°C for one hour the uncured monomers containing photoinitiators should have cured. Thus rendering the resin-printed master mold unreactive with the PDMS allowing it to cure. Unfortunately, this technique resulted in large warping due to cross-linking and the PDMS still did not cure.
-* **Curing 3D printed parts** The second approach was from a different research paper where a thin (nm) layer of paralene is used to coat the mold rendering it unreactive and biocompatible. This technique produced a PDMS microfluidic device from the master mould. 
-* **Glass Bonding** * In further testing the bond between the glass and PDMS must be improved to allow the glass to withstand the pressure produced to liquid flow within the microfluidic channels. 
+* **SLA Fabrication isn’t perfect** 
+  SLA printing uses resins that contain photoinitiators that form free radicals which are very chemically reactive. As such there have been issues with creating mixing devices from the 3D mold due to PDMS not curing and adhesion to the 3D printed master mold. Two solutions were attempted in this project. 
+* **Curing 3D printed parts** 
+  The first solution attempted was based on the literature linked below. The theory is that after curing at 120°C for one hour the uncured monomers containing photoinitiators should have cured. Thus rendering the resin-printed master mold unreactive with the PDMS allowing it to cure. Unfortunately, this technique resulted in large warping due to cross-linking and the PDMS still did not cure.
+* **Curing 3D printed parts** 
+  The second approach was from a different research paper where a thin (nm) layer of paralene is used to coat the mold rendering it unreactive and biocompatible. This technique produced a PDMS microfluidic device from the master mould. 
+* **Glass Bonding** * 
+  In further testing, the bond between the glass and PDMS must be improved to allow the glass to withstand the pressure produced to liquid flow within the microfluidic channels. 
 
 
 
 # Appendix 
-*Relevant papers: • 
-*Microfluidic Mixing: A Review. Int J Mol Sci.12(5): 3263–3287
-*Rapid prototyping of cell culture microdevices using parylene-coated 3D prints Lab Chip, 2021, 21, 4814-4822
-* PDMS Curing Inhibition on 3D-Printed Molds: Why? Also, How to Avoid It?
-Bastien Venzac, Shanliang Deng, Ziad Mahmoud, Aufried Lenferink, Aurélie Costa, Fabrice Bray, Cees Otto, Christian Rolando, and Séverine Le Gac
-Analytical Chemistry 2021
-
-
-![Plier Pincing](/assets/img/plier gif.gif)
+**Relevant papers:**  
+*[Microfluidic Mixing: A Review. Int J Mol Sci.12(5): 3263–3287](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3116190/)
+*[Rapid prototyping of cell culture microdevices using parylene-coated 3D prints Lab Chip, 2021, 21, 4814-4822](https://pubs.rsc.org/en/content/articlelanding/2021/lc/d1lc00744k)
+*[PDMS Curing Inhibition on 3D-Printed Molds: Why? Also, How to Avoid It? Bastien Venzac, Shanliang Deng, Ziad Mahmoud, Aufried Lenferink, Aurélie Costa, Fabrice Bray, Cees Otto, Christian Rolando, and Séverine Le Gac, Analytical Chemistry 2021](https://pubs.acs.org/doi/10.1021/acs.analchem.0c04944)
 
 
 
 
-{% include gallery caption="Flexible Pliers Gallery" %}
+
+
+
+{% include gallery caption="MicroFluidic Gallery" %}
 
 
