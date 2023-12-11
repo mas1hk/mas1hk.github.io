@@ -25,7 +25,7 @@ feature_row:
     title: "Flexible Pliers"
     excerpt: "Multi-Material 3D printing."
 
-  - image_path: /assets/img/Testing Image.jpeg
+  - image_path: /assets/img/Testing Image.jpg
     alt: "Microfluidic Device"
     title: "Microfluidic Device"
     excerpt: "Manufacturing Microfluidic Devices."
