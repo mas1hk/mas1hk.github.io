@@ -36,26 +36,26 @@ gallery:
 1) **3D printed master mould** 
   Using the SLA printer a master mold of the microfluidic channels can be printed. The print is made of clear resin and is then cured for 25 minutes at 100°C. In the mold negative spaces are extruded such that the extruded spaces are empty when a PDMS mold is created from the 3D print. 
 
-</figure>
-<img src="/assets/img/Clear Mould.jpg" alt="drawing" width="400" height ="400"/> 
+
+<img src="/assets/img/Clear Mould.jpg" alt="drawing" width="200" height ="200"/> 
 <figcaption>Clear 3D printed mould.</figcaption>
-</figure>
+
   
 2) **Paralene Deposition and PDMS** 
   The master mould can then be used to create microfluidic devices with the exact geometries required. Originally, the PDMS was added in a 10:1 ratio with a curing agent directly into the master mould. However, it was found that the PDMS did not cure this way. Instead, Parleyene was deposited onto the surface of the master mould using the Labcoter PDS 2010 parylene deposition machine. An explanation of these issues is provided in the improvements section. After this PDMS could be added in 10:1 ratio with a curing solution to produce plastic microfluidic devices that are compatible with cell cultures. 
 
-</figure>
-<img src="/assets/img/Baked Bad Mould.jpg" alt="drawing" width="400" height ="400"/>  
+
+<img src="/assets/img/Baked Bad Mould.jpg" alt="drawing" width="200" height ="200"/>  
 <figcaption>Over sintered mould.</figcaption>
-</figure>
+
 
 3) **Bonding to Glass Plate** 
   Finally, the bottom layer of the PDMS plastic is bonded to a glass plate to close the channels. This was done using the PlasmaFlo PDC-FMG plasma cleaner. 
 
-</figure>
-<img src="/assets/img/Device.jpg" alt="drawing" width="400" height ="400"/>  
+
+<img src="/assets/img/Device.jpg" alt="drawing" width="200" height ="200"/>  
 <figcaption>Final PDMS device bonded to glass plate.</figcaption>
-</figure> 
+ 
 
 #Testing
 * ** Good News or Bad News** 
