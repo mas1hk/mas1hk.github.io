@@ -18,12 +18,17 @@ feature_row:
   - image_path: assets/img/cover photo.jpg
     alt: "Bike Phone Mount"
     title: "Bike Phone Mout"
-    excerpt: "Quick and easy protoype."
+    excerpt: "Quick and easy prototype."
     
   - image_path: /assets/img/Plier.jpeg
     alt: "Flexible Pliers"
     title: "Flexible Pliers"
     excerpt: "Multi-Material 3D printing."
+
+  - image_path: /assets/img/Testing Image.jpeg
+    alt: "Microfluidic Device"
+    title: "Microfluidic Device"
+    excerpt: "Manufacturing Microfluidic Devices."
 
 ---
 
