@@ -60,8 +60,8 @@ gallery:
 #Testing
 * ** Good News or Bad News** 
   It was found that the microfluidic device initially mixed a solution of blue and pink solution producing a purple solution. However, the small channel lengths meant the pressure within the channels was large resulting in the glass and PDMS splitting. 
- 
- ![Test video](/assets/img/Test vid to gif.gif)
+
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/d6joNObLwHE?si=FpuUn_DfC15Lp6tX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 # Improvements
