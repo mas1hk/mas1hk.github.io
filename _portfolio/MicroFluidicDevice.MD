@@ -34,21 +34,39 @@ gallery:
 
 # Fabrication technique
 
-* ** 3D printed master mold** A literature survey reviewing microfluidic mixing methods and geometries was used to inform the design used and is linked in the appendix. It was found that out of all passive mixing methods zig-zag channels had one of the highest mixing indexes at 0.96. Based on this knowledge a zig-zag mixing geometry was created with small horizontal channels in between to encourage flow.  
-* ** Paralene Deposition and PDMS** Utilizing the SLA printer allowed for easy fabrication of 3D features to further enhance mixing. A twisting channel was created on the final straight away for the fluid to encourage some final mixing based on geometries also found in the literature survey. 
-* ** Bonding to Glass Plate** Utilsing the SLA printer allowed for easy fabrication of 3D features to further enhance mixing. A twisting channel was created on the final straight away for the fluid to encourage some final mixing based on geometries also found in the literature survey. 
+* ** 3D printed master mould** Using the SLA printer a master mold of the microfluidic channels can be printed. The print is made of clear resin and is then cured for 25 minutes at 100°C. In the mold negative spaces are extruded such that the extruded spaces are empty when a PDMS mold is created from the 3D print. 
+
+Insert image of 3D print 
+  
+* ** Paralene Deposition and PDMS** The master mold can then be used to create microfluidic devices with the exact geometries required. Originally, the PDMS was added in a 10:1 ratio with a curing agent directly into the master mold. However, it was found that the PDMS did not cure this way. Instead, Parleyene was deposited onto the surface of the master mould using the Labcoter PDS 2010 parylene deposition machine. An explanation of these issues is provided in the improvements section. After this PDMS could be added in 10:1 ratio with a curing solution to produce plastic microfluidic devices that are compatible with cell cultures. 
+
+Insert image 
+
+* ** Bonding to Glass Plate** Finally, the bottom layer on the PDMS plastic is bonded to a glass plate to close the channels. This was done using the PlasmaFlo PDC-FMG plasma cleaner. 
+
+#Testing
+* ** Good News or Bad News** It was found that the microfluidic device initially mixed a solution of blue and pink solution producing a purple solution. However, the small channel lengths meant the pressure within the channels was large resulting in the glass and PDMS splitting. 
+ 
+Insert video 
+
 
 # Improvements
 
 * **SLA Fabrication isn’t perfect** SLA printing uses resins that contain photoinitiators that form free radicals which are very chemically reactive. As such there have been issues with creating mixing devices from the 3D mold due to PDMS not curing and adhesion to the 3D printed master mold. Two solutions were attempted in this project. 
 * **Curing 3D printed parts** The first solution attempted was based on the literature linked below. The theory is that after curing at 120°C for one hour the uncured monomers containing photoinitiators should have cured. Thus rendering the resin-printed master mold unreactive with the PDMS allowing it to cure. Unfortunately, this technique resulted in large warping due to cross-linking and the PDMS still did not cure.
-* **Curing 3D printed parts** The second approach was from a different research paper where a thin (nm) layer of paralene is used to coat the mold rendering it unreactive and biocompatible. This technique produced a PDMS microfluidic device from the master mold. 
+* **Curing 3D printed parts** The second approach was from a different research paper where a thin (nm) layer of paralene is used to coat the mold rendering it unreactive and biocompatible. This technique produced a PDMS microfluidic device from the master mould. 
+* **Glass Bonding** * In further testing the bond between the glass and PDMS must be improved to allow the glass to withstand the pressure produced to liquid flow within the microfluidic channels. 
+
 
 
 # Appendix 
 *Relevant papers: • 
-*Microfluidic Mixing: A Review. Int J Mol Sci.12(5): 3263–3287.
+*Microfluidic Mixing: A Review. Int J Mol Sci.12(5): 3263–3287
 *Rapid prototyping of cell culture microdevices using parylene-coated 3D prints Lab Chip, 2021, 21, 4814-4822
+* PDMS Curing Inhibition on 3D-Printed Molds: Why? Also, How to Avoid It?
+Bastien Venzac, Shanliang Deng, Ziad Mahmoud, Aufried Lenferink, Aurélie Costa, Fabrice Bray, Cees Otto, Christian Rolando, and Séverine Le Gac
+Analytical Chemistry 2021
+
 
 ![Plier Pincing](/assets/img/plier gif.gif)
 
