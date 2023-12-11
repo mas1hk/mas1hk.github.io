@@ -80,7 +80,9 @@ gallery:
 # Appendix 
 **Relevant papers:**  
 *[Microfluidic Mixing: A Review. Int J Mol Sci.12(5): 3263–3287](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3116190/)
+
 *[Rapid prototyping of cell culture microdevices using parylene-coated 3D prints Lab Chip, 2021, 21, 4814-4822](https://pubs.rsc.org/en/content/articlelanding/2021/lc/d1lc00744k)
+
 *[PDMS Curing Inhibition on 3D-Printed Molds: Why? Also, How to Avoid It? Bastien Venzac, Shanliang Deng, Ziad Mahmoud, Aufried Lenferink, Aurélie Costa, Fabrice Bray, Cees Otto, Christian Rolando, and Séverine Le Gac, Analytical Chemistry 2021](https://pubs.acs.org/doi/10.1021/acs.analchem.0c04944)
 
 
