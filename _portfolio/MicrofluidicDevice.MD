@@ -62,7 +62,7 @@ gallery:
  
 
 # Testing
-* ** Good News or Bad News**
+* ** Good News or Bad News** 
   - It was found that the microfluidic device initially mixed a solution of blue and pink solution producing a purple solution. However, the small channel lengths meant the pressure within the channels was large resulting in the glass and PDMS splitting. 
 
  <iframe width="560" height="315" src="https://www.youtube.com/embed/d6joNObLwHE?si=FpuUn_DfC15Lp6tX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -76,7 +76,7 @@ gallery:
   - The first solution attempted was based on the literature linked below. The theory is that after curing at 120°C for one hour the uncured monomers containing photoinitiators should have cured. Thus rendering the resin-printed master mold unreactive with the PDMS allowing it to cure. Unfortunately, this technique resulted in large warping due to cross-linking and the PDMS still did not cure.
 * **Curing 3D printed parts** 
   - The second approach was from a different research paper where a thin (nm) layer of paralene is used to coat the mold rendering it unreactive and biocompatible. This technique produced a PDMS microfluidic device from the master mould. 
-* **Glass Bonding** * 
+* **Glass Bonding** 
   - In further testing, the bond between the glass and PDMS must be improved to allow the glass to withstand the pressure produced to liquid flow within the microfluidic channels. 
 
 
