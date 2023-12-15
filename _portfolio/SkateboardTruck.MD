@@ -12,18 +12,21 @@ gallery:
 ---
 # Background
 
-*  Microfluidic devices are devices that use and manipulate extremely small amounts of fluids on the 10^-9 -10^-18m for various purposes. Manipulations on fluids at this scale have applications in detecting chemical compounds, cell culture devices, and at-home testing such as pregnancy tests. 
-* The goal of this project is to create a microfluidic mixing device using digital fabrication techniques to reduce the cost and difficulty of manufacturing. 
-*  I am particularly interested in the applications of microfluidic devices for testing as such devices can reduce the quantity of reagents needed for testing thus improving the efficiency of tests by minimising waste. Furthermore, smaller tests enable multiple reactions or tests to be run simultaneously from one sample and increase accessibility by enabling point-of-care use. 
-*  When considering microfluidic testing devices an important base criterion for many of these devices is the mixing of reagents. Two important examples of this are biological assays that measure the quantity or presence of a target element and chemical reactions/synthesis. In both cases, mixing is required to ensure homogenous testing and reactions occur.
+*  The goal of this project is to explore the capabilties of generative desing to design parts for performance. The usual process for designing performance parts requires many iterations followed by FEA to create a part that is structurally fit for an application. Generative design is a potentially more efficient way to allow a computer to automate these iterations to produce a part that fits the requirments needed. 
 
-# Importance of Digital Fabrication
+# Why Generative Design? 
 
-* **3D printing microfluidic moulds** 
-  - Current 3D printing technologies like SLA printing have extremely small resolutions that can be used to provide a cost-effective way to fabricate microdevices with complex geometries. Commonly the fabrication of microfluidic devices requires specialised training and access to a clean room. Hence, the use of 3D printing technologies can improve the manufacturing process by reducing the overhead cost of equipment and training required for the fabrication process. 
+* **What is it?** 
+  - Generative Design is the process of generating a design from design criteria, loads and constraints using AI to drive exploratory iterations of a design that eventually converge to a final solution. 
 
-* **How SLA Printers work** 
-  - SLA printers offer some of the highest resolution out of current on-the-market 3D printers. The FormLabs SLA printer has a laser spot size of 85μm and a minimum XY resolution of 25μm. This is achieved through the use of vat photo polymerisation to polymerise resin into polymers through exposure to UV light. Due to the use of a UV laser parabolic mirror and galvanometer small spot sizes can be achieved for point-wise scanning. This type of scanning is called vector scanning as objects are converted into point-wise objects and each layer of the object is created by the laser point by point. 
+* **Load Cases** 
+  - Being able to apply load cases to constrain the creation of a design ensures that the part created is strong enough for a paticular application without the need of FEA (fininte element analysis) for the user. Instead, the simulation and analysis is all automated by the generative design software and used to inform further computer generated iterations. 
+
+* **Constrain Elements** 
+  - By constraining existing elements in an assembly, generative design software is then able to create a part as needed that couples to exisiting geometries and elements as defined by the user. This is the key element of generative design that the user controls and uses to define a design. A key benifit to this is that by using generative design a single part that couples many constrained objects in an assembly can be created reducing the need for complex sub-assembelies or complicated joints. 
+
+* **Minimise material** 
+  - Another key benifit of computational generative design is that further constraints like minimising material can be applied and explored by the software. Constraints like this that are in direct relation to load cases and other design elements are much harder to implement by a user as it hard to keep track of how changes in material affect other design elements. This process is perfect for computational design where the software can iterate and explore multiple designs whilst keeping track of complex relationshops between the material, constrained element and load cases. This can result in a final part that uses less material than traditional parts thus reducing material costs and manufactuing efficency.  
 
 # CAD Model
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH512d4QTec90decfa6eea03d13de859ed90?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
