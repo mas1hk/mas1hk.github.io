@@ -31,7 +31,7 @@ gallery:
   - The board was made 16mm thick to allow for two aluminium plates to be sandwiched between the gap to which the trucks would screw in. Aluminium plates sandwiched between a square geometry were used to increase the area of contact with the plastic and reduce the compressive force. Due to the nature of filament 3D printing, compressive bolts would most likely shear along neighbouring lines of plastic formed by the printer. 
   - With the force of a 200lb rider the board deflected a maximum of 3.175mm according to Fusion’s FEA simulation. This deflection is a good amount that should allow for flexibility whilst ensuring stability. 
 
-<img src="/assets/img/Deck/Deflection.jpg" width="500" height ="200"/>
+<img src="/assets/img/Deck/Deflection.jpg"/>
 
 * **Handle** 
   - Finally, a handle was designed on the board to allow for easy accessibility and transportation of the board when it is being carried. The handle was designed to be 0.75” wide to provide a comfortable grip. 
