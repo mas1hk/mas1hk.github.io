@@ -35,6 +35,11 @@ feature_row:
     title: "Skateboard Truck"
     excerpt: "Manufacturing a skateboard truck using SLS printing and generative design"
 
+  - image_path: /assets/img/Truck/Skateboard_render.jpg
+    alt: "Skateboard Deck using Large Format 3D printer"
+    title: "Skateboard Deck using Large Format 3D printer"
+    excerpt: "Skateboard Deck using Large Format 3D printer"
+
 ---
 
 {% include feature_row %}
