@@ -30,6 +30,11 @@ feature_row:
     title: "Microfluidic Device"
     excerpt: "Manufacturing Microfluidic Devices."
 
+  - image_path: /assets/img/Truck/Truck_render.jpg
+    alt: "Skateboard Truck created through generative design"
+    title: "Skateboard Truck"
+    excerpt: "Manufacturing a skateboard truck using SLS printing and generative design"
+
 ---
 
 {% include feature_row %}
