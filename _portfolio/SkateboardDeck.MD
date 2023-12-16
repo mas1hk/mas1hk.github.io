@@ -44,7 +44,9 @@ gallery:
 To model the use of the deck design and get an idea of the full longboard geometries a miniature version of the full skateboard assembly was printed on the SLA printer. The SLA printer was used for its ability to print complex parts quickly. The complete longboard was printed at 1:20 scale and based on the board geometries it was then concluded that moving on to large format printing the board was possible.  
 
 
+<p float="left">
 <img src="/assets/img/Deck/Mini_deck.jpg" alt="Mini Longboard" width="200" height ="200"/>
+</p>
 
 * **Deck** 
   - The board was printed on the large format 3D printer and came out just as expected. When testing the board the deflection was slightly larger than expected but it still functioned. Another design was also tested and provided less deflection. That board was then used to attach the 3D printed trucks, motor and battery to produce a fully functioning, digitally fabricated electric longboard. 
