@@ -87,4 +87,4 @@ gallery:
 
 
 
-{% include gallery caption="MicroFluidic Gallery" %}
+{% include gallery caption="Skateboard Truck Gallery" %}
