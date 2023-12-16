@@ -14,7 +14,7 @@ gallery:
 
 *  As a final capstone project for the additive manufacturing minor the digital fabrication lab aims to create an electric longboard to encourage the use of electric vehicles as modes of transportation. The lab aims to create a longboard that is more customizable, faster and lightweight compared to a traditional longboard by adding a digital fabrication twist to the manufacturing process. A key component of this design is the longboard deck. Thanks to our professor Dr Florian we have access to a large format 3D printer that can print a full-size longboard deck.
 
-#Large Format 3D printer
+# Large Format 3D printer
 
 * **What is it?** 
   - Just as the name suggests a large format 3D printer is a large version of a filament 3D printer. Dr Florian's 3D printer has a 4’ x 4’ x 4' build volume and as such has a large nozzle, large belts, a large frame and large gantries and linear actuators. To extrude such a large volume a screw extruder that has a plastic melting capacity of 1kg/hr. To feed plastic into the 3D printer a pellet extruder uses a vacuum system to blow stored pellets into the extruder when needed. 
