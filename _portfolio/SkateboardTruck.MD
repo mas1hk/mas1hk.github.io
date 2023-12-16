@@ -57,12 +57,12 @@ gallery:
   -  As shown in the CAD Models above both designs are very unique and organic. As such it is very hard to create parts like this using traditional manufacturing methods. This is where digital fabrication comes into play. Utilsing SLS (selective laser sintering) powder bed fusion complex, organic parts can be manufactured with istropic material properties. Nylon-12 is the polymer used in this process and there is the drawback that this material is not as strong as traditional aluminium however it allows for the manufacturing of much more complex parts. 
   -  For the final creation of the truck alumiium will be used as it requires less material and is thus more lightweight. However, due to the organic nature of the design the part will be sent to a manufacturer to either metal print or create through an extensive machining process. 
 
-<img src="assets/img/Truck/Truck_render.jpg" width="350" height ="350"/>
+<img src="/assets/img/Truck/Truck_render.jpg" width="350" height ="350"/>
 
 * **Load Cycles** 
   - The SLS printed version of the alumiium truck was tested as a proof of concept. All geometries fit as required thus the truck worked functionality to join all components of the board. However, after 5 repeated  test cycles of inserting and removing the truck the ball joint eventually snapped. This is due to the rigidity of the part and the fact that the truck requires some flexibility to fit into the socket and elastic joint. This was unknown at the time of the design so further iterations would need to be to allow for some flexibility. 
 
-<img src="assets/img/Truck/truck_print.jpg" width="350" height ="350"/>
+<img src="/assets/img/Truck/truck_print.jpg" width="350" height ="350"/>
 
 # Generative Design in the automotive industry
 
