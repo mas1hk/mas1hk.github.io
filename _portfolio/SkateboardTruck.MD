@@ -59,7 +59,7 @@ To model the use of the deck design and get an idea of the full longboard geomet
 
 # Appendix 
 **Relevant material:**  
-*Detials on Dr Florian’s Large Format 3D printer](https://www.youtube.com/playlist?list=PLZ9ac-f1U5V-FCBdhjv56bcvn9yc6JSfY)
+*Details on Dr Florian’s Large Format 3D printer](https://www.youtube.com/playlist?list=PLZ9ac-f1U5V-FCBdhjv56bcvn9yc6JSfY)
 
 *[Information on longboard deck geomerties for riding](https://stokedrideshop.com/blogs/stoked-school/what-size-longboard-should-i-get)
 
