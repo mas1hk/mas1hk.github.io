@@ -7,7 +7,7 @@ header:
 gallery:
   - image_path: /assets/img/Truck/Skateboard_render.jpg
   - image_path: /assets/img/Truck/Truck_render.jpg
-  - image_path: /assets/img/Truck/Truck_print.jpg
+  - image_path: /assets/img/Truck/truck_print.jpg
    
 ---
 # Background
