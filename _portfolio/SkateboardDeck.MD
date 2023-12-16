@@ -31,7 +31,7 @@ gallery:
   - The board was made 16mm thick to allow for two aluminium plates to be sandwiched between the gap to which the trucks would screw in. Aluminium plates sandwiched between a square geometry were used to increase the area of contact with the plastic and reduce the compressive force. Due to the nature of filament 3D printing, compressive bolts would most likely shear along neighbouring lines of plastic formed by the printer. 
   - With the force of a 200lb rider the board deflected a maximum of 3.175mm according to Fusion’s FEA simulation. This deflection is a good amount that should allow for flexibility whilst ensuring stability. 
 
-<img src="/assets/img/Deck/deflection.jpg" width="500" height ="200"/>
+<img src="/assets/img/Deck/Deflection.jpg" width="500" height ="200"/>
 
 * **Handle** 
   - Finally, a handle was designed on the board to allow for easy accessibility and transportation of the board when it is being carried. The handle was designed to be 0.75” wide to provide a comfortable grip. 
@@ -44,7 +44,7 @@ gallery:
 To model the use of the deck design and get an idea of the full longboard geometries a miniature version of the full skateboard assembly was printed on the SLA printer. The SLA printer was used for its ability to print complex parts quickly. The complete longboard was printed at 1:20 scale and based on the board geometries it was then concluded that moving on to large format printing the board was possible.  
 
 
-<img src="/assets/img/Deck/Mini_deck.jpg" alt="Mini Longboard" width="500" height ="200"/>
+<img src="/assets/img/Deck/Mini_deck.jpg" alt="Mini Longboard" width="200" height ="200"/>
 
 * **Deck** 
   - The board was printed on the large format 3D printer and came out just as expected. When testing the board the deflection was slightly larger than expected but it still functioned. Another design was also tested and provided less deflection. That board was then used to attach the 3D printed trucks, motor and battery to produce a fully functioning, digitally fabricated electric longboard. 
