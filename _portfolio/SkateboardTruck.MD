@@ -37,7 +37,7 @@ gallery:
 * **Constrain Elements** 
   - The truck is designed to join the wheels to the board through a few components. First, there is the part of the truck that mounts to the board. This is a preexisting part that has a circular ball and  socket joint that allows the board to rotate left and right for turning. There is a second point of joining between this skateboard mount and the truck where the truck is sandwiched between two flexible joints to provide stability by restricting motion. Furthermore, there are wheels which connect via a metal rod such that they remain in line with one another. Finally, there is the motor which drives a single wheel as is standard with electric skateboards. Driving the single wheel actuates motion in the remaining 3 wheels when the board is on the ground. 
 
-<img src="/assets/img/Truck/Annoated assmebly without truck.jpg" alt="Annotated Assembly" width="350" height ="350"/>
+<img src="/assets/img/Truck/Annoated assmebly without truck.jpg" alt="Annotated Assembly" width="400" height ="300"/>
 
 * **Motor mounting and minimising material** 
   - A key element in designing the truck was correctly positioning the motor such that the pulley is taught between the motor and wheels. Furthermore, the motor must be positioned such that when the board bends to turn it will not collide with the motor. As such a pulley calculator was used to find the exact horizontal distance between the two wheels since the motor belt length was known to be 285mm and both pulleys have a 5mm pitch and known number of teeth so the wheel diameter can be calculated. To ensure that the board doesn’t collide with the motor the motor is positioned such that it’s center is halfway between the underside of the deck and the bottom of the wheels. 
