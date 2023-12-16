@@ -2,12 +2,12 @@
 title: "Generative Design of an Electric Skateboard Truck"
 excerpt: "A project testing the capabilities of generative design for performance parts."
 header:
-  image: /assets/img/Testing Image.jpg
-  teaser: /assets/img/Device.jpg
+  image: /assets/img/Truck/Truck_render.jpg
+  teaser: /assets/img/Truck/Truck_render.jpg
 gallery:
-  - image_path: /assets/img/Baked Bad Mould.jpg
-  - image_path: /assets/img/Clear Mould.jpg
-  - image_path: /assets/img/Device.jpg
+  - image_path: /assets/img/Truck/Skateboard_render.jpg
+  - image_path: /assets/img/Truck/Truck_render.jpg
+  - image_path: /assets/img/Truck_print.jpg
    
 ---
 # Background
@@ -37,7 +37,7 @@ gallery:
 * **Constrain Elements** 
   - The truck is designed to join the wheels to the board through a few components. First, there is the part of the truck that mounts to the board. This is a preexisting part that has a circular ball and  socket joint that allows the board to rotate left and right for turning. There is a second point of joining between this skateboard mount and the truck where the truck is sandwiched between two flexible joints to provide stability by restricting motion. Furthermore, there are wheels which connect via a metal rod such that they remain in line with one another. Finally, there is the motor which drives a single wheel as is standard with electric skateboards. Driving the single wheel actuates motion in the remaining 3 wheels when the board is on the ground. 
 
-
+<img src="/assets/img/Truck/Annoated assmebly without truck.jpg" alt="Annotated Assembly" width="350" height ="350"/>
 
 * **Motor mounting and minimising material** 
   - A key element in designing the truck was correctly positioning the motor such that the pulley is taught between the motor and wheels. Furthermore, the motor must be positioned such that when the board bends to turn it will not collide with the motor. As such a pulley calculator was used to find the exact horizontal distance between the two wheels since the motor belt length was known to be 285mm and both pulleys have a 5mm pitch and known number of teeth so the wheel diameter can be calculated. To ensure that the board doesn’t collide with the motor the motor is positioned such that it’s center is halfway between the underside of the deck and the bottom of the wheels. 
@@ -57,8 +57,12 @@ gallery:
   -  As shown in the CAD Models above both designs are very unique and organic. As such it is very hard to create parts like this using traditional manufacturing methods. This is where digital fabrication comes into play. Utilsing SLS (selective laser sintering) powder bed fusion complex, organic parts can be manufactured with istropic material properties. Nylon-12 is the polymer used in this process and there is the drawback that this material is not as strong as traditional aluminium however it allows for the manufacturing of much more complex parts. 
   -  For the final creation of the truck alumiium will be used as it requires less material and is thus more lightweight. However, due to the organic nature of the design the part will be sent to a manufacturer to either metal print or create through an extensive machining process. 
 
+<img src="assets/img/Truck/Truck_render.jpg" width="350" height ="350"/>
+
 * **Load Cycles** 
   - The SLS printed version of the alumiium truck was tested as a proof of concept. All geometries fit as required thus the truck worked functionality to join all components of the board. However, after 5 repeated  test cycles of inserting and removing the truck the ball joint eventually snapped. This is due to the rigidity of the part and the fact that the truck requires some flexibility to fit into the socket and elastic joint. This was unknown at the time of the design so further iterations would need to be to allow for some flexibility. 
+
+<img src="assets/img/Truck/truck_print.jpg" width="350" height ="350"/>
 
 # Generative Design in the automotive industry
 
