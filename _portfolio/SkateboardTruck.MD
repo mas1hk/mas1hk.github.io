@@ -49,6 +49,10 @@ gallery:
 * **Two designs produceded** 
   - Using generative design two designs were produced. One out of Nylon-12 and the other out of aluminium. Both of these designs are shown below. Due to the material properties of Nylon 12 the mass of material required was much larger given the load cases applied and the design created would not be a suitable truck due to the size and material requirments required to deal with the load cases. As such the Nylon-12 design was not used in the creation of the skateboard and based on the generative design it is assumed that Nylon-12 is not a suitable material to create a skateboard truck out of. 
 
+<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH512d4QTec90decfa6e473f5ee3060bc62e?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+
+<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH512d4QTec90decfa6eb0e6e979ebeb3e13?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+
 * **Manufacturing (how do you make a part that looks like this?)** 
   -  As shown in the CAD Models above both designs are very unique and organic. As such it is very hard to create parts like this using traditional manufacturing methods. This is where digital fabrication comes into play. Utilsing SLS (selective laser sintering) powder bed fusion complex, organic parts can be manufactured with istropic material properties. Nylon-12 is the polymer used in this process and there is the drawback that this material is not as strong as traditional aluminium however it allows for the manufacturing of much more complex parts. 
   -  For the final creation of the truck alumiium will be used as it requires less material and is thus more lightweight. However, due to the organic nature of the design the part will be sent to a manufacturer to either metal print or create through an extensive machining process. 
