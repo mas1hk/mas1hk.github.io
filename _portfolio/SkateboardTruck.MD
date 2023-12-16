@@ -12,7 +12,8 @@ gallery:
 ---
 # Background
 
-*  The goal of this project is to explore the capabilties of generative desing to design parts for performance. The usual process for designing performance parts requires many iterations followed by FEA to create a part that is structurally fit for an application. Generative design is a potentially more efficient way to allow a computer to automate these iterations to produce a part that fits the requirments needed. 
+*  As a final capstone project for the additive manufacturing minor the digital fabrication lab aims to create an electric longboard to encourage the use of electric vehicles as modes of transportation. The lab aims to create a longboard that is more customizable, faster and lightweight compared to a traditional longboard by adding a digital fabrication twist to the manufacturing process. A key component of a skateboard is the skateboard truck. Traditional trucks are made from metal and pair to the skateboard through a ball joint and a flexible insert.
+*  The goal of this project is to explore the capabilities of generative design to design parts a  performance longboard truck that can mount a motor and has a lightweight geometry. The usual process for designing performance parts requires many iterations followed by FEA to create a part that is structurally fit for an application. Generative design is a potentially more efficient way to allow a computer to automate these iterations to produce a part that fits the requirements needed. 
 
 # Why Generative Design? 
 
@@ -20,77 +21,57 @@ gallery:
   - Generative Design is the process of generating a design from design criteria, loads and constraints using AI to drive exploratory iterations of a design that eventually converge to a final solution. 
 
 * **Load Cases** 
-  - Being able to apply load cases to constrain the creation of a design ensures that the part created is strong enough for a paticular application without the need of FEA (fininte element analysis) for the user. Instead, the simulation and analysis is all automated by the generative design software and used to inform further computer generated iterations. 
+  - Being able to apply load cases to constrain the creation of a design ensures that the part created is strong enough for a particular application without the need for FEA (finite element analysis) for the user. Instead, the simulation and analysis are all automated by the generative design software and used to inform further computer-generated iterations. 
 
 * **Constrain Elements** 
-  - By constraining existing elements in an assembly, generative design software is then able to create a part as needed that couples to exisiting geometries and elements as defined by the user. This is the key element of generative design that the user controls and uses to define a design. A key benifit to this is that by using generative design a single part that couples many constrained objects in an assembly can be created reducing the need for complex sub-assembelies or complicated joints. 
+  - By constraining existing elements in an assembly, generative design software is then able to create a part as needed that couples to existing geometries and elements as defined by the user. This is the key element of generative design that the user controls and uses to define a design. A key benefit to this is that by using generative design a single part that couples many constrained objects in an assembly can be created reducing the need for complex sub-assemblies or complicated joints. 
 
 * **Minimise material** 
-  - Another key benifit of computational generative design is that further constraints like minimising material can be applied and explored by the software. Constraints like this that are in direct relation to load cases and other design elements are much harder to implement by a user as it hard to keep track of how changes in material affect other design elements. This process is perfect for computational design where the software can iterate and explore multiple designs whilst keeping track of complex relationshops between the material, constrained element and load cases. This can result in a final part that uses less material than traditional parts thus reducing material costs and manufactuing efficency.  
+  - Another key benefit of computational generative design is that further constraints like minimising material can be applied and explored by the software. Constraints like this that are in direct relation to load cases and other design elements are much harder to implement by a user as it is hard to keep track of how changes in material affect other design elements. This process is perfect for a computational design where the software can iterate and explore multiple designs whilst keeping track of complex relationships between the material, constrained element and load cases. This can result in a final part that uses less material than traditional parts thus reducing material costs and manufacturing efficiency. 
 
-# CAD Model
-<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH512d4QTec90decfa6eea03d13de859ed90?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+# Skateboard Truck Design Choices 
 
-# Design Features
+* **Load Cases** 
+  - There are 3 main load cases to consider with the design of the skateboard truck. First is the weight of the board and the user on top of the skateboard. This force would most likely be disturbed down across the centre rod that connects the truck to the two wheels. Given a rider weight of 200lbs with a safety factor of 2 the total load used to model was 400lbs . The second load case to consider is the horizontal force transferred through the truck from the wheels when a rider hits a curb or something else in the horizontal plane. The impulse of this force was estimated to be around 100 lbs on each side.  Finally, there is the load case due to the torque of the motor acting as it drives the wheel. This is modelled as a moment arm about the motor axis. The maximum moment was estimated to be around 200 N*m given the torque rating of the motor. 
 
-* **Mixing channel** 
-  - A literature survey reviewing microfluidic mixing methods and geometries was used to inform the design used and is linked in the appendix. It was found that out of all passive mixing methods zig-zag channels had one of the highest mixing indexes at 0.96. Based on this knowledge a zig-zag mixing geometry was created with small horizontal channels in between to encourage flow.  
-* **3D mixing feature** 
-  - Utilizing the SLA printer allowed for easy fabrication of 3D features to further enhance mixing. A twisting channel was created on the final straight away for the fluid to encourage some final mixing based on geometries also found in the literature survey. 
-
-# Fabrication technique
-
-1) **3D printed master mould** 
-  - Using the SLA printer a master mold of the microfluidic channels can be printed. The print is made of clear resin and is then cured for 25 minutes at 100°C. In the mold negative spaces are extruded such that the extruded spaces are empty when a PDMS mold is created from the 3D print. 
+* **Constrain Elements** 
+  - The truck is designed to join the wheels to the board through a few components. First, there is the part of the truck that mounts to the board. This is a preexisting part that has a circular ball and  socket joint that allows the board to rotate left and right for turning. There is a second point of joining between this skateboard mount and the truck where the truck is sandwiched between two flexible joints to provide stability by restricting motion. Furthermore, there are wheels which connect via a metal rod such that they remain in line with one another. Finally, there is the motor which drives a single wheel as is standard with electric skateboards. Driving the single wheel actuates motion in the remaining 3 wheels when the board is on the ground. 
 
 
-<img src="/assets/img/Clear Mould.jpg" alt="drawing" width="200" height ="200"/> 
-<figcaption>Clear 3D printed mould.</figcaption>
 
-  
-2) **Paralene Deposition and PDMS** 
-  - The master mould can then be used to create microfluidic devices with the exact geometries required. Originally, the PDMS was added in a 10:1 ratio with a curing agent directly into the master mould. However, it was found that the PDMS did not cure this way. Instead, Parleyene was deposited onto the surface of the master mould using the Labcoter PDS 2010 parylene deposition machine. An explanation of these issues is provided in the improvements section. After this PDMS could be added in 10:1 ratio with a curing solution to produce plastic microfluidic devices that are compatible with cell cultures. 
+* **Motor mounting and minimising material** 
+  - A key element in designing the truck was correctly positioning the motor such that the pulley is taught between the motor and wheels. Furthermore, the motor must be positioned such that when the board bends to turn it will not collide with the motor. As such a pulley calculator was used to find the exact horizontal distance between the two wheels since the motor belt length was known to be 285mm and both pulleys have a 5mm pitch and known number of teeth so the wheel diameter can be calculated. To ensure that the board doesn’t collide with the motor the motor is positioned such that it’s center is halfway between the underside of the deck and the bottom of the wheels. 
+  - Based on the positioning of the key elements of the sub-assmebly. Objects were created such that when the design of the truck was created geometries like the rod,  ball and socket joint and motor face are preserved whilst other objects like the motor body, wheels and flexible truck inserts were classified as objects to ensure the design did not interfere with these parts. Then with these geomerties outlined generative design software was used to create a design that joined the components given the load cases using the minimum amount of mass. 
 
 
-<img src="/assets/img/Baked Bad Mould.jpg" alt="drawing" width="200" height ="200"/>  
-<figcaption>Over sintered mould.</figcaption>
+# Results 
 
+* **Two designs produceded** 
+  - Using generative design two designs were produced. One out of Nylon-12 and the other out of aluminium. Both of these designs are shown below. Due to the material properties of Nylon 12 the mass of material required was much larger given the load cases applied and the design created would not be a suitable truck due to the size and material requirments required to deal with the load cases. As such the Nylon-12 design was not used in the creation of the skateboard and based on the generative design it is assumed that Nylon-12 is not a suitable material to create a skateboard truck out of. 
 
-3) **Bonding to Glass Plate** 
-  - Finally, the bottom layer of the PDMS plastic is bonded to a glass plate to close the channels. This was done using the PlasmaFlo PDC-FMG plasma cleaner. 
+* **Manufacturing (how do you make a part that looks like this?)** 
+  -  As shown in the CAD Models above both designs are very unique and organic. As such it is very hard to create parts like this using traditional manufacturing methods. This is where digital fabrication comes into play. Utilsing SLS (selective laser sintering) powder bed fusion complex, organic parts can be manufactured with istropic material properties. Nylon-12 is the polymer used in this process and there is the drawback that this material is not as strong as traditional aluminium however it allows for the manufacturing of much more complex parts. 
+  -  For the final creation of the truck alumiium will be used as it requires less material and is thus more lightweight. However, due to the organic nature of the design the part will be sent to a manufacturer to either metal print or create through an extensive machining process. 
 
+* **Load Cycles** 
+  - The SLS printed version of the alumiium truck was tested as a proof of concept. All geometries fit as required thus the truck worked functionality to join all components of the board. However, after 5 repeated  test cycles of inserting and removing the truck the ball joint eventually snapped. This is due to the rigidity of the part and the fact that the truck requires some flexibility to fit into the socket and elastic joint. This was unknown at the time of the design so further iterations would need to be to allow for some flexibility. 
 
-<img src="/assets/img/Device.jpg" alt="drawing" width="200" height ="200"/>  
-<figcaption>Final PDMS device bonded to glass plate.</figcaption>
- 
+# Generative Design in the automotive industry
 
-# Testing
-* **Good News or Bad News**  
-  - It was found that the microfluidic device initially mixed a solution of blue and pink solution producing a purple solution. However, the small channel lengths meant the pressure within the channels was large resulting in the glass and PDMS splitting. 
+* **Hamilton an 8-time F1 champ** 
+  - Since computational design can be used to minimise the mass of parts with extreme efficiency it is something that is becoming increasingly to use in industry. When performance parts are needed weight is often a big consideration espceicallyt in the automotive and aerospace industries where vehicle weight makes a big difference to it’s efficiency. In formula 1, as teams compete to create the most lightweight Mercedes have started to work with autodesk to use generative design to create parts that are more lightweight. 
+* **Toyota on top** 
+  - Creating parts that are more lightweight isnt the only use case for this sort of technology and companies like Toyota have used autodesks generative design to create thinner car seat frames to create more space within the vehicle to improve comfortabltiltiy. As AI continues to evolve the number of potential applications of this technology and it’s efficiency will continue to improve. As such it is important that manufacturing methods also evolve so that complex parts can be created.  
 
- <iframe width="560" height="315" src="https://www.youtube.com/embed/d6joNObLwHE?si=FpuUn_DfC15Lp6tX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-# Improvements
-
-* **SLA Fabrication isn’t perfect** 
-  - SLA printing uses resins that contain photoinitiators that form free radicals which are very chemically reactive. As such there have been issues with creating mixing devices from the 3D mold due to PDMS not curing and adhesion to the 3D printed master mold. Two solutions were attempted in this project. 
-* **Curing 3D printed parts**
-  - The first solution attempted was based on the literature linked below. The theory is that after curing at 120°C for one hour the uncured monomers containing photoinitiators should have cured. Thus rendering the resin-printed master mold unreactive with the PDMS allowing it to cure. Unfortunately, this technique resulted in large warping due to cross-linking and the PDMS still did not cure.
-* **Curing 3D printed parts** 
-  - The second approach was from a different research paper where a thin (nm) layer of paralene is used to coat the mold rendering it unreactive and biocompatible. This technique produced a PDMS microfluidic device from the master mould. 
-* **Glass Bonding** 
-  - In further testing, the bond between the glass and PDMS must be improved to allow the glass to withstand the pressure produced to liquid flow within the microfluidic channels. 
 
 
 
 # Appendix 
 **Relevant papers:**  
-*[Microfluidic Mixing: A Review. Int J Mol Sci.12(5): 3263–3287](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3116190/)
+*[Generative Design for Formula 1 Car Design](https://www.autodesk.com/autodesk-university/content/generative-design-for-formula-1-car-design)
 
-*[Rapid prototyping of cell culture microdevices using parylene-coated 3D prints Lab Chip, 2021, 21, 4814-4822](https://pubs.rsc.org/en/content/articlelanding/2021/lc/d1lc00744k)
+*[Toyota Generative Design - Generative design in manufacturing is transforming the industry](https://www.autodesk.com/design-make/articles/generative-design-in-manufacturing)
 
-*[PDMS Curing Inhibition on 3D-Printed Molds: Why? Also, How to Avoid It? Bastien Venzac, Shanliang Deng, Ziad Mahmoud, Aufried Lenferink, Aurélie Costa, Fabrice Bray, Cees Otto, Christian Rolando, and Séverine Le Gac, Analytical Chemistry 2021](https://pubs.acs.org/doi/10.1021/acs.analchem.0c04944)
 
 
 
