@@ -1,90 +1,73 @@
 ---
-title: "Generative Design of an Electric Skateboard Truck"
-excerpt: "A project testing the capabilities of generative design for performance parts."
+title: "Manufacturing a longboard deck"
+excerpt: "Large format 3D printing using pellet extrusion"
 header:
-  image: /assets/img/Truck/Truck_render.jpg
-  teaser: /assets/img/Truck/Truck_render.jpg
+  image:  /assets/img/Truck/Skateboard_render.jpg
+  teaser:  /assets/img/Truck/Skateboard_render.jpg
 gallery:
-  - image_path: /assets/img/Truck/Skateboard_render.jpg
-  - image_path: /assets/img/Truck/Truck_render.jpg
-  - image_path: /assets/img/Truck/truck_print.jpg
+  - image_path: /assets/img/Deck/my_deck.jpg
+  - image_path: /assets/img/Deck/Truck/full_board.jpg
+  - image_path: /assets/img/Deck/Mini_deck.jpg
    
 ---
 # Background
 
-*  As a final capstone project for the additive manufacturing minor the digital fabrication lab aims to create an electric longboard to encourage the use of electric vehicles as modes of transportation. The lab aims to create a longboard that is more customizable, faster and lightweight compared to a traditional longboard by adding a digital fabrication twist to the manufacturing process. A key component of a skateboard is the skateboard truck. Traditional trucks are made from metal and pair to the skateboard through a ball joint and a flexible insert.
-*  The goal of this project is to explore the capabilities of generative design to design parts a  performance longboard truck that can mount a motor and has a lightweight geometry. The usual process for designing performance parts requires many iterations followed by FEA to create a part that is structurally fit for an application. Generative design is a potentially more efficient way to allow a computer to automate these iterations to produce a part that fits the requirements needed. 
+*  As a final capstone project for the additive manufacturing minor the digital fabrication lab aims to create an electric longboard to encourage the use of electric vehicles as modes of transportation. The lab aims to create a longboard that is more customizable, faster and lightweight compared to a traditional longboard by adding a digital fabrication twist to the manufacturing process. A key component of this design is the longboard deck. Thanks to our professor Dr Florian we have access to a large format 3D printer that can print a full-size longboard deck.
 
-# Why Generative Design? 
+#Large Format 3D printer 
 
 * **What is it?** 
-  - Generative Design is the process of generating a design from design criteria, loads and constraints using AI to drive exploratory iterations of a design that eventually converge to a final solution. 
+  - Just as the name suggests a large format 3D printer is a large version of a filament 3D printer. Dr Florian's 3D printer has a 4’ x 4’ x 4' build volume and as such has a large nozzle, large belts, a large frame and large gantries and linear actuators. To extrude such a large volume a screw extruder that has a plastic melting capacity of 1kg/hr. To feed plastic into the 3D printer a pellet extruder uses a vacuum system to blow stored pellets into the extruder when needed. 
 
-* **Load Cases** 
-  - Being able to apply load cases to constrain the creation of a design ensures that the part created is strong enough for a particular application without the need for FEA (finite element analysis) for the user. Instead, the simulation and analysis are all automated by the generative design software and used to inform further computer-generated iterations. 
+# Skateboard Deck Design Choices 
 
-* **Constrain Elements** 
-  - By constraining existing elements in an assembly, generative design software is then able to create a part as needed that couples to existing geometries and elements as defined by the user. This is the key element of generative design that the user controls and uses to define a design. A key benefit to this is that by using generative design a single part that couples many constrained objects in an assembly can be created reducing the need for complex sub-assemblies or complicated joints. 
+* **Longboard dimensions** 
+  - Longboard dimensions dictate its rideability based on a board's wheelbase. This is the distance between the wheel axis’ of a board. A long wheelbase results in a large turn radius but a more stable board. Whereas a shorter wheelbase results in a smaller turn radius (better manoeuvrability) but less stability. Given the average wheelbases for different longboards a distance that would enable usage for both freestyle longboarding and downhill longboarding was chosen. This was found to be around 29” with a total board length of 43”. As such this board should be able to handle the speed that comes with an electric-powered longboard due to its length which is common for downhill high-speed longboarding. Furthermore, it should also be able to be quickly manipulated by skilled users for more intricate rides similar to the way freestyle longboards are used. Finally, for added stability at high speeds, the deck is at a width of 18” as is common for downhill longboard decks. 
 
-* **Minimise material** 
-  - Another key benefit of computational generative design is that further constraints like minimising material can be applied and explored by the software. Constraints like this that are in direct relation to load cases and other design elements are much harder to implement by a user as it is hard to keep track of how changes in material affect other design elements. This process is perfect for a computational design where the software can iterate and explore multiple designs whilst keeping track of complex relationships between the material, constrained element and load cases. This can result in a final part that uses less material than traditional parts thus reducing material costs and manufacturing efficiency. 
+<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH512d4QTec90decfa6e2d8d938a1c398f1b?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
-# Skateboard Truck Design Choices 
+* **Sleekness and flexibility** 
+  - The thickness of the board was designed such that there is some flexibility when a 200lb rider stands on the board but not enough bending that the board would feel loose to stand on. As such the design was constrained such that no more than 12mm of deformation would occur with a 200lb rider. At the same time to ensure that the board is lightweight the design was made to be sleek and thin. To improve sleekness and allow for better turning the board was designed such that there is a gap for the wheels so they do not limit the bend in the board during turns. This means riders can sit deeper in the turn improving the turning radius and maneuverability of the longboard. 
+  - The board was made 16mm thick to allow for two aluminium plates to be sandwiched between the gap to which the trucks would screw in. Aluminium plates sandwiched between a square geometry were used to increase the area of contact with the plastic and reduce the compressive force. Due to the nature of filament 3D printing, compressive bolts would most likely shear along neighbouring lines of plastic formed by the printer. 
+  - With the force of a 200lb rider the board deflected a maximum of 3.175mm according to Fusion’s FEA simulation. This deflection is a good amount that should allow for flexibility whilst ensuring stability. 
 
-* **Load Cases** 
-  - There are 3 main load cases to consider with the design of the skateboard truck. First is the weight of the board and the user on top of the skateboard. This force would most likely be disturbed down across the centre rod that connects the truck to the two wheels. Given a rider weight of 200lbs with a safety factor of 2 the total load used to model was 400lbs. The second load case to consider is the horizontal force transferred through the truck from the wheels when a rider hits a curb or something else in the horizontal plane. The impulse of this force was estimated to be around 100 lbs on each side.  Finally, there is the load case due to the torque of the motor acting as it drives the wheel. This is modelled as a moment arm about the motor axis. The maximum moment was estimated to be around 200 N*m given the torque rating of the motor. 
+<img src="/assets/img/Board/Deflection.jpg" alt="Deflection" width="500" height ="200"/>
 
-* **Constrain Elements** 
-  - The truck is designed to join the wheels to the board through a few components. First, there is the part of the truck that mounts to the board. This is a preexisting part that has a circular ball and socket joint that allows the board to rotate left and right for turning. There is a second point of joining between this skateboard mount and the truck where the truck is sandwiched between two flexible joints to provide stability by restricting motion. Furthermore, there are wheels which connect via a metal rod such that they remain in line with one another. Finally, there is the motor which drives a single wheel as is standard with electric skateboards. Driving the single wheel actuates motion in the remaining 3 wheels when the board is on the ground. 
+* **Handle** 
+  - Finally, a handle was designed on the board to allow for easy accessibility and transportation of the board when it is being carried. The handle was designed to be 0.75” wide to provide a comfortable grip. 
 
-<img src="/assets/img/Truck/Annoated assmebly without truck.jpg" alt="Annotated Assembly" width="400" height ="300"/>
-
-* **Motor mounting and minimising material** 
-  - A key element in designing the truck was correctly positioning the motor such that the pulley is taught between the motor and wheels. Furthermore, the motor must be positioned such that when the board bends to turn it will not collide with the motor. As such a pulley calculator was used to find the exact horizontal distance between the two wheels since the motor belt length was known to be 285mm and both pulleys have a 5mm pitch and known number of teeth so the wheel diameter can be calculated. To ensure that the board doesn’t collide with the motor the motor is positioned such that its center is halfway between the underside of the deck and the bottom of the wheels. 
-  - Based on the positioning of the key elements of the sub-assembly. Objects were created such that when the design of the truck was created geometries like the rod,  ball and socket joint and motor face were preserved whilst other objects like the motor body, wheels and flexible truck inserts were classified as objects to ensure the design did not interfere with these parts. Then with these geometries outlined generative design software was used to create a design that joined the components given the load cases using the minimum amount of mass. 
 
 
 # Results 
 
-* **Two designs produced** 
-  - Using generative design two designs were produced. One out of Nylon-12 and the other out of aluminium. Both of these designs are shown below. Due to the material properties of Nylon 12 the mass of material required was much larger given the load cases applied and the design created would not be a suitable truck due to the size and material requirements required to deal with the load cases. As such the Nylon-12 design was not used in the creation of the skateboard and based on the generative design it is assumed that Nylon-12 is not a suitable material to create a skateboard truck out of. 
-
-<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH512d4QTec90decfa6e473f5ee3060bc62e?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-
-<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH512d4QTec90decfa6eb0e6e979ebeb3e13?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-
-* **Manufacturing (how do you make a part that looks like this?)** 
-  -  As shown in the CAD Models above both designs are very unique and organic. As such it is very hard to create parts like this using traditional manufacturing methods. This is where digital fabrication comes into play. Utilizing SLS (selective laser sintering) powder bed fusion complex, organic parts can be manufactured with isotropic material properties. Nylon-12 is the polymer used in this process and there is the drawback that this material is not as strong as traditional aluminium however it allows for the manufacturing of much more complex parts. 
-  -  For the final creation of the truck aluminium will be used as it requires less material and is thus more lightweight. However, due to the organic nature of the design, the part will be sent to a manufacturer to either metal print or create through an extensive machining process. 
-
-<img src="/assets/img/Truck/Truck_render.jpg" width="350" height ="350"/>
-
-* **Load Cycles** 
-  - The SLS-printed version of the aluminium truck was tested as a proof of concept. All geometries fit as required thus the truck worked functionality to join all components of the board. However, after 5 repeated test cycles of inserting and removing the truck the ball joint eventually snapped. This is due to the rigidity of the part and the fact that the truck requires some flexibility to fit into the socket and elastic joint. This was unknown at the time of the design so further iterations would need to be to allow for some flexibility. 
-
-<img src="/assets/img/Truck/truck_print.jpg" width="350" height ="350"/>
-
-# Generative Design in the automotive industry
-
-* **Hamilton an 8-time F1 champ** 
-  - Since computational design can be used to minimise the mass of parts with extreme efficiency it is something that is becoming increasingly used in industry. When performance parts are needed weight is often a big consideration, especially in the automotive and aerospace industries where vehicle weight makes a big difference to its efficiency. In Formula 1, as teams compete to create the most lightweight Mercedes has started to work with Autodesk to use generative design to create parts that are more lightweight. 
-* **Toyota on top** 
-  - Creating parts that are more lightweight isn't the only use case for this sort of technology and companies like Toyota have used Autodesk's generative design to create thinner car seat frames to create more space within the vehicle to improve comfortability. As AI continues to evolve the number of potential applications of this technology and it’s efficiency will continue to improve. As such it is important that manufacturing methods also evolve so that complex parts can be created.  
+* **Prototyping** 
+To model the use of the deck design and get an idea of the full longboard geometries a miniature version of the full skateboard assembly was printed on the SLA printer. The SLA printer was used for its ability to print complex parts quickly. The complete longboard was printed at 1:20 scale and based on the board geometries it was then concluded that moving on to large format printing the board was possible.  
 
 
+<img src="/assets/img/Board/Mini_deck.jpg" alt="Mini Longboard" width="500" height ="200"/>
+
+* **Deck** 
+  - The board was printed on the large format 3D printer and came out just as expected. When testing the board the deflection was slightly larger than expected but it still functioned. Another design was also tested and provided less deflection. That board was then used to attach the 3D printed trucks, motor and battery to produce a fully functioning, digitally fabricated electric longboard. 
+
+<p float="left">
+  <img src="/assets/img/Board/my_deck.jpg" alt="Longboard deck" width="200" height ="200"/>
+  <img src="/assets/img/Board/full_board.jpg" alt="Final Longboard" width="200" height ="200"/>
+</p>
+
+<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH512d4QTec90decfa6efc949877b2c2ac26?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
 
 # Appendix 
-**Relevant papers:**  
-*[Generative Design for Formula 1 Car Design](https://www.autodesk.com/autodesk-university/content/generative-design-for-formula-1-car-design)
+**Relevant material:**  
+*Detials on Dr Florian’s Large Format 3D printer](https://www.youtube.com/playlist?list=PLZ9ac-f1U5V-FCBdhjv56bcvn9yc6JSfY)
 
-*[Toyota Generative Design - Generative design in manufacturing is transforming the industry](https://www.autodesk.com/design-make/articles/generative-design-in-manufacturing)
-
-
+*[Information on longboard deck geomerties for riding](https://stokedrideshop.com/blogs/stoked-school/what-size-longboard-should-i-get)
 
 
 
 
 
 
-{% include gallery caption="Skateboard Truck Gallery" %}
+
+
+{% include gallery caption="Longboard Deck" %}
